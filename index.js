@@ -72,7 +72,7 @@ function createItem(item) {
 
 function getTasksFromDOM() {
   const itemsNamesElements = listElement.querySelectorAll(".to-do__item-text");
-  let tasks = [];
+  const tasks = [];
   itemsNamesElements.forEach((item) => {
     const text = item.textContent.trim();
     tasks.push(text);
